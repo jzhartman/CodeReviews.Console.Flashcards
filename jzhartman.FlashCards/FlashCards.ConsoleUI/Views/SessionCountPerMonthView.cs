@@ -7,7 +7,6 @@ public class SessionCountPerMonthView
 {
     public void Render(List<GetSessionCountPerMonthResponse> reports, int year)
     {
-        int i = 1;
         var table = new Table()
                         .RoundedBorder()
                         .BorderColor(Color.Blue)

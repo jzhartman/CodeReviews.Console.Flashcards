@@ -7,7 +7,6 @@ public class AverageScorePerMonthView
 {
     public void Render(List<GetAverageScorePerMonthResponse> reports, int year)
     {
-        int i = 1;
         var table = new Table()
                         .RoundedBorder()
                         .BorderColor(Color.Blue)
