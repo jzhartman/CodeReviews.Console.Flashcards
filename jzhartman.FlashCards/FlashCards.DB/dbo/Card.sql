@@ -1,0 +1,11 @@
+﻿CREATE TABLE [dbo].[Card]
+(
+	[Id] INT NOT NULL PRIMARY KEY IDENTITY,
+	[StackId] INT NOT NULL,
+	[FrontText] NVARCHAR(250) NOT NULL,
+	[BackText] NVARCHAR(250) NOT NULL,
+	[TimesStudied] INT NOT NULL DEFAULT 0,
+	[TimesCorrect]	INT NOT NULL DEFAULT 0,
+	[TimesIncorrect] INT NOT NULL DEFAULT 0,
+    CONSTRAINT [FK_Card_ToTStack] FOREIGN KEY ([StackId]) REFERENCES [Stack]([Id])
+)
